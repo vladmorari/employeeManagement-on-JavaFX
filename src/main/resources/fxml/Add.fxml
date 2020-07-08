@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="297.0" prefWidth="375.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.employeemanagementjavafx.AddController">
+    <stylesheets>
+        <URL value="@/styles/add.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="25.0" layoutY="19.0" text="Name" />
+      <TextField fx:id="fieldName" layoutX="122.0" layoutY="15.0" />
+      <Label layoutX="25.0" layoutY="59.0" text="Surename" />
+      <TextField fx:id="fieldSurename" layoutX="122.0" layoutY="55.0" />
+      <Button layoutX="67.0" layoutY="233.0" mnemonicParsing="false" onAction="#addEmployee" prefHeight="26.0" prefWidth="103.0" text="Add" textFill="#000cea">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="fieldIdnp" layoutX="121.0" layoutY="99.0" />
+      <DatePicker fx:id="data" editable="false" layoutX="119.0" layoutY="140.0" prefHeight="26.0" prefWidth="190.0" />
+      <Label layoutX="25.0" layoutY="103.0" text="IDNP" />
+      <Label layoutX="25.0" layoutY="144.0" text="Byrthday" />
+      <Button layoutX="219.0" layoutY="233.0" mnemonicParsing="false" onAction="#cancelAdd" prefHeight="26.0" prefWidth="103.0" text="Cancel" textFill="#da0606">
+         <font>
+            <Font name="Bernard MT Condensed" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

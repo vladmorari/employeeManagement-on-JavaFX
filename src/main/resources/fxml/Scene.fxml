@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="593.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.employeemanagementjavafx.MainController">
+   <children>
+      <TableView fx:id="table" layoutY="7.0" prefHeight="487.0" prefWidth="442.0">
+        <columns>
+          <TableColumn fx:id="columnEmployeeName" prefWidth="99.20001524686813" text="Nmae" />
+          <TableColumn fx:id="columnEmployeeSurename" prefWidth="102.39996337890625" text="Surename" />
+            <TableColumn fx:id="columnEmployeeIdnp" prefWidth="120.00004577636719" text="Idnp" />
+            <TableColumn fx:id="columnEmployeeByrthday" prefWidth="117.5999755859375" text="Byrthday" />
+        </columns>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#editRightClick" text="Edit" />
+                 <MenuItem mnemonicParsing="false" onAction="#onDeleteEmployee" text="Delete" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      <Button layoutX="453.0" layoutY="7.0" mnemonicParsing="false" onAction="#addButton" prefHeight="26.0" prefWidth="128.0" text="Add Employee" />
+   </children>
+</AnchorPane>
